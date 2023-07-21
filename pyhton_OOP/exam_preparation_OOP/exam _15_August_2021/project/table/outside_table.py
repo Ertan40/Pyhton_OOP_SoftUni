@@ -12,6 +12,6 @@ class OutsideTable(Table):
     @table_number.setter
     def table_number(self, value):
         if not 51 <= value <= 100:
-            return ValueError("Outside table's number must be between 51 and 100 inclusive!")
+            raise ValueError("Outside table's number must be between 51 and 100 inclusive!")
         self.__table_number = value
 
